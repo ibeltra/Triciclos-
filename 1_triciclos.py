@@ -49,6 +49,3 @@ def triciclos(sp,filename):
             groupByKey().mapValues(list).filter(pendientes).flatMap(comprobar)
     r = a.collect()
     return r
-
-grafo = input("Grafo: ")
-print(triciclos(sc,grafo))
